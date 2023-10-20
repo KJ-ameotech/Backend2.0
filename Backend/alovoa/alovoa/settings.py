@@ -88,22 +88,10 @@ WSGI_APPLICATION = 'alovoa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'defaultdb',
-        'USER': 'vultradmin',
-        'PASSWORD': 'AVNS_WrhUuPNF0MNwMNnWFy5',
-        'HOST': 'vultr-prod-2f6feb88-520b-4806-bec9-fe81d0f8ec0f-vultr-prod-5d43.vultrdb.com',
-        'PORT': '16751',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
