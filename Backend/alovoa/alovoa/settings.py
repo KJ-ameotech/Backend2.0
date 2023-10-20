@@ -105,7 +105,7 @@ JAZZMIN_SETTINGS = {
 }
 
 
-
+AUTH_USER_MODEL = 'user_accounts.CustomUser'
 
 
 # Password validation
@@ -158,7 +158,7 @@ MEDIA_URL = '/media/' # Public URL at the browser
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'user_accounts.CustomUser'
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -199,14 +199,4 @@ CORS_ALLOW_HEADERS = [
 STRIPE_PUBLIC_KEY = 'pk_test_51NfjzOSA1sOBZbZTKvOc1PHFkMYgufgopdqvT1UKkwrlZp7O8rdJQnk7UMPzom20CjPrwuQxqexQKa3oMPqQPoC500C3FrDN6Q'
 STRIPE_SECRET_KEY = 'sk_test_51NfjzOSA1sOBZbZTwjWW0fEO1FrsqzhXG1JKH4FcqjfY1rCmVqhiYOJu12eWgKPnXJxb25apkDCvowya3hHJdAFe009euYRZZ2'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'defaultdb',
-        'USER': 'vultradmin',
-        'PASSWORD': 'AVNS_WrhUuPNF0MNwMNnWFy5',
-        'HOST': 'vultr-prod-2f6feb88-520b-4806-bec9-fe81d0f8ec0f-vultr-prod-5d43.vultrdb.com',
-        'PORT': '16751',
-    }
-}
 
