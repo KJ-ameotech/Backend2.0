@@ -168,10 +168,10 @@ class SuccessStory(models.Model):
     author = models.CharField(max_length=255)
     content = models.TextField()
     date_published = models.DateField(auto_now_add=True)
+    image = models.ImageField(upload_to='success_story_images/')  # Add this line
 
     def __str__(self):
         return self.title
-
 
 
 

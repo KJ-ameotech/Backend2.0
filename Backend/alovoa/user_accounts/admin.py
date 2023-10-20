@@ -1,7 +1,7 @@
 # myapp/admin.py (replace 'myapp' with your app's name)
 
 from django.contrib import admin
-from .models import CustomUser, Profile,FamilyName,CreateSubscription, ContactUs,ContactDetails,Preference,ProfilePicture, Image, UserLike, Subscription, Community, Religion,State, District
+from .models import CustomUser, Profile,SuccessStory,FamilyName,CreateSubscription, ContactUs,ContactDetails,Preference,ProfilePicture, Image, UserLike, Subscription, Community, Religion,State, District
 
 @admin.register(CustomUser)
 class CustomUserAdmin(admin.ModelAdmin):
@@ -25,3 +25,4 @@ admin.site.register(FamilyName),
 admin.site.register(CreateSubscription),
 admin.site.register(ContactDetails),
 admin.site.register(ContactUs),
+admin.site.register(SuccessStory),
